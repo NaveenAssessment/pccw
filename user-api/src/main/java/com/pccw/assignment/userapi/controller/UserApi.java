@@ -77,7 +77,7 @@ public interface UserApi {
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = User.class) })
     
-    @RequestMapping(value = "/users/{id}",
+    @RequestMapping(value = "/users",
         produces = { "application/json;charset=UTF-8" }, 
         consumes = { "application/json" },
         method = RequestMethod.POST)
